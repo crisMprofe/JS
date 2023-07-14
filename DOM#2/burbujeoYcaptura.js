@@ -39,8 +39,31 @@ enlace.addEventListener("click", (e) => {
     e.preventDefault();//para que se quede el mensaje mientras se detiene el envio
     console.log("click");
 });4*/
-//vuelvo a las cajitas
-const container = document.querySelector('.container');
-container.addEventListener("click", (e) => {
-    console.log(e.target);
+//*5vuelvo a las cajitas delegacion de eventos:
+//tres formas de acceder al elemento por medio de la DELEGACION DE EVENTOS 
+//a- container
+
+//const container = document.querySelector('.container');
+//container.addEventListener("click", (e) => {
+    //b- document
+document.addEventListener("click", (e) => {
+    //console.log(e.target);
+    //console.log(e.target.id);//acceso x el id
+
+    if (e.target.id === "padre"){
+        console.log("diste click al padre");
+    }
+    //console.log(e.target.matches(".border-secondary"));
+    if (e.target.matches(".border-secondary")){
+        console.log("diste click en el hijo");
+    }
+    //console.log(e.target.dataset);//dataset accedo a los data
+    //console.log(e.target.dataset.div);//identifico a cada data div
+    if (e.target.dataset.div === "divNieto") {
+        console.log("diste click en nieto");
+    }
+
+
 });
+
+//sino quiero acceder a un contenedor puedo acceder a todo el documento y hacer la delegacion de eventos//

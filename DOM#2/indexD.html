@@ -63,11 +63,12 @@
     </template-->
 
   <div class="container">
-    <div class="border border-primary border-5 py-5 m-3">
+    <div id="padre" class="border border-primary border-5 py-5 m-3"  data-div="divPadre">
         Lorem, ipsum dolor 
-        <div class="border border-secondary border-5 py-5 m-3">
+        <div id="hijo"class="border border-secondary border-5 py-5 m-3" data-div="divHijo">
+            <!--data-div= uso data xq significa que voy a trbajar con este elemnto en js-->
             Lorem, ipsum dolor 
-            <div class="border border-danger border-5 py-5 m-3">
+            <div id="nieto" class="border border-danger border-5 py-5 m-3" data-div="divNieto">
                 Lorem, ipsum dolor 
             </div>
         </div>
@@ -78,7 +79,7 @@
         <input type="text" name="nombre">
         <button type="submit">Enviar</button>
     </form>
-    <a href="#">ENLACE</a-->  
+    <a href="#" target='_blank'>ENLACE</a-->  
     
 
         
