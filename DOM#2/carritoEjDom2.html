@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarritoDOM#2</title>
+
+     <link href="../ARRAYS_METHODS/estilos.css" type="text/css" rel="stylesheet">
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+     <main class="container mt-5">
+            <div class="row text-center">
+                <article class="col-sm-3 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class=" tex">Frutilla 🍓</h5>
+                            <!--<windows> + <.> = emoji-->
+                                <p class="lead">$500</p>
+                            <button class="btn btn-outline-primary" data-fruta="Frutilla" data-precio="500">Agregar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-3 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="tex">Banana 🍌</h5>
+                            <p class="lead">$450</p>
+                            <button class="btn btn-outline-primary" data-fruta="Banana" data-precio="450">Agregar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-3 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="tex">Manzana 🍏</h5>
+                            <p class="lead">$400</p>
+                            <button class="btn btn-outline-primary" data-fruta="Manzana" data-precio="400">Agregar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-3 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="tex">Cereza 🍒</h5>
+                            <p class="lead">$550</p>
+                            <button class="btn btn-outline-primary" data-fruta="Cerezas" data-precio="550">Agregar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+    </main>
+    
+    <section class="container mt-3">
+            <ul class="list-group" id="carrito">
+                <!--template-->
+            </ul>
+    </section>
+    <footer id="footer" class="container mt-3 ">
+        
+    </footer>
+    <!--template del footer-->
+    <template id="templateFooter">
+        <div class="card">
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <p class="lead mb-0">Total $<span>1500</span></p>
+                <button class="btn btn-outline-info">Finalizar compra</button>
+            </div>
+        </div>
+    </template>
+    <!--fin template del footer-->
+    <template id="template">
+        <li class="list-group-item text-uppercase bg-secondary text-white">
+            <span class="badge bg-primary rounded-pill align-middle">14</span>
+            <span class="lead align-middle">A list item</span>
+            
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div>
+                <p class="lead mb-0">Total: $<span>500</span></p>
+            </div>
+            <div>
+                <button class="btn btn-sm btn-danger">Quitar</button>
+                <button class="btn btn-sm btn-success">Agregar</button>
+            
+            </div>
+        </li>
+    </template>
+
+    <script src="appcarritoDom2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
